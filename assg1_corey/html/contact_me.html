@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>CMPT 350 Assg1</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script> 
+		$(function(){
+		  $("#header").load("header.html"); 
+		  $("#nav").load("nav.html");
+		  $("#footer").load("footer.html"); 
+		});
+		</script>
+		<link rel="stylesheet" type="text/css" href="..\stylesheets\ie.css">
+		<link rel="stylesheet" type="text/css" href="..\stylesheets\print.css">
+		<link rel="stylesheet" type="text/css" href="..\stylesheets\screen.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    	<script src="http://maps.googleapis.com/maps/api/js"></script>
+    	<script src="../javascript/contact_me.js"></script>
+    </head>
+    <body>
+    	<div id="header"><h1><img id="h-image" src="https://upload.wikimedia.org/wikipedia/en/b/bd/Random_App_Logo.png">COREY HICKSON</h1></div>
+		<script> 
+		$(function(){
+		  $("#header").load("header.html"); 
+		  $("#nav").load("nav.html");
+		  $("#footer").load("footer.html"); 
+		});
+		</script>
+    	<div id="nav" style="background: none;">
+			<nav id="nav-bar">
+				<div id="nav-button">
+					<a href="../html/index.html">HOME</a>
+				</div>
+				<div id="nav-button">
+					<a href="../html/about_me.html">ABOUT ME</a>
+				</div>
+				<div id="nav-button">
+					<a href="../html/contact_me.html">CONTACT ME</a>
+				</div>
+			</nav>
+		</div>
+    	<br>
+    	<form id="contact" onsubmit="return validateForm()">
+		  Name:<br>
+		  <input type="text" name="name" id="name" required><br><br>
+		  E-mail:<br>
+		  <input type="email" name="email" id="email" required><br><br>
+		  Phone number:<br>
+		  <input type="tel" name="phonenum" id="phonenum" required><br><br>
+		  Date:<br>
+		  <input type="datepickers" name="date" id="date" required><br><br>
+		  Message:<br>
+		  <textarea rows="4" cols="50" name="message" id="message" required>Message here</textarea><br><br>
+		  <input type="submit" value="Submit" id="submit">
+		</form>
+    	<!-- This was taken from an old project I did https://github.com/CoreyHickson/OdinProjectProjects/tree/master/android_logo -->
+    	<div class="android">
+		    <div class="head">
+		        <link rel="stylesheet" type="text/css" href="style.css">
+		        <div class="l_ant"></div>
+		        <div class="r_ant"></div>
+		        <div class="l_eye"></div>
+		        <div class="r_eye"></div>
+		    </div>
+		    <div class="body">
+		        <div class="l_arm"></div>
+		        <div class="r_arm"></div>
+		        <div class="l_leg"></div>
+		        <div class="r_leg"></div>
+		    </div>
+		</div>
+    	<div id="footer">
+			<br>© Corey Hickson<br><br>
+			<a href="http://facebook.com/#">
+				<img width="40px" src="../assets/square-facebook-512.png">
+			</a>
+			<a href="http://twitter.com/#">
+				<img width="40px" src="../assets/697029-twitter-512.png">
+			</a>
+			<a href="http://linkedin.com/#">
+				<img width="40px" src="../assets/linkedin_circle_color-512.png">
+			</a>
+
+		</div>
+        <br>
+    </body>
+</html>

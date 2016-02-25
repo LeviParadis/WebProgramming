@@ -1,0 +1,452 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=The+Girl+Next+Door);
+/* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 15, ../sass/screen.scss */
+body {
+  font: 100% Tahoma, Geneva, sans-serif;
+  color: #FFF;
+  background-color: #000;
+  background-image: url("../assets/keyboard.png");
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+/* line 24, ../sass/screen.scss */
+#header {
+  color: #000;
+  background-color: #FFF;
+}
+/* line 28, ../sass/screen.scss */
+#header h1 {
+  text-align: center;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+@media (max-width: 820px) {
+  /* line 28, ../sass/screen.scss */
+  #header h1 {
+    font-size: 300%;
+    padding-top: 7%;
+    padding-bottom: 9%;
+  }
+}
+@media (min-width: 819px) {
+  /* line 28, ../sass/screen.scss */
+  #header h1 {
+    font-size: 500%;
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+}
+/* line 46, ../sass/screen.scss */
+#header #h-image {
+  position: relative;
+  width: 17%;
+  height: auto;
+}
+@media (max-width: 820px) {
+  /* line 46, ../sass/screen.scss */
+  #header #h-image {
+    width: 100px;
+  }
+}
+@media (min-width: 819px) {
+  /* line 46, ../sass/screen.scss */
+  #header #h-image {
+    width: 150px;
+  }
+}
+
+/* line 61, ../sass/screen.scss */
+#nav #nav-bar {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: none;
+}
+/* line 67, ../sass/screen.scss */
+#nav #nav-button {
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 120%;
+  padding: 1.5%;
+}
+/* line 73, ../sass/screen.scss */
+#nav #nav-button a {
+  text-decoration: none;
+  color: #8082aa;
+  font-weight: 700;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+}
+/* line 80, ../sass/screen.scss */
+#nav #nav-button a:hover {
+  opacity: 0.5;
+}
+
+/* line 86, ../sass/screen.scss */
+#footer {
+  color: #FFF;
+  text-align: center;
+}
+
+/*Style from http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video*/
+/* line 92, ../sass/screen.scss */
+#video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 109, ../sass/screen.scss */
+#home-image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+/* line 116, ../sass/screen.scss */
+.json-text {
+  min-width: 500px;
+  max-width: 500px;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+/* Style from http://cssdeck.com/labs/striped-business-card*/
+/* line 126, ../sass/screen.scss */
+#bcbg {
+  width: 450px;
+  height: 250px;
+  background: transparent url(http://colourlovers.com.s3.amazonaws.com/images/patterns/3925/3925858.png?1381698366) repeat bottom right;
+  padding: 15px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* line 131, ../sass/screen.scss */
+.container {
+  background: #222627;
+  width: 445px;
+  height: 245px;
+  border: 2px dotted #1ba9cc;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* line 132, ../sass/screen.scss */
+.line1 {
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 29px;
+  color: #fff;
+  margin: 8px;
+}
+
+/* line 133, ../sass/screen.scss */
+.line2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  margin: -8px 0 0 9px;
+}
+
+/* line 134, ../sass/screen.scss */
+.contact {
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  width: 250px;
+  height: 65px;
+  margin: 75px 0 0 9px;
+  padding: 5px;
+}
+
+/* line 135, ../sass/screen.scss */
+.logo {
+  width: 125px;
+  height: 130px;
+  float: right;
+  margin: -219px 10px 0 0;
+  text-align: center;
+}
+
+/* line 137, ../sass/screen.scss */
+#googleMap {
+  margin: 0 auto;
+}
+
+/* Based off of styles from http://www.sanwebe.com/2014/08/css-html-forms-designs
+ and http://codepen.io/rexkirby/pen/Fdnlz*/
+/* line 143, ../sass/screen.scss */
+#contact {
+  margin: 0 auto;
+  width: 400px;
+  font-size: 16px;
+  background: #001a23;
+  padding: 30px 30px 30px 50px;
+  border: 5px solid #00222d;
+}
+/* line 150, ../sass/screen.scss */
+#contact #name, #contact #email, #contact #phonenum, #contact #date {
+  background: #4B99AD;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  width: 350px;
+}
+/* line 156, ../sass/screen.scss */
+#contact #message {
+  background: #4B99AD;
+  padding: 16px 15px 8px 45px;
+  border: none;
+  width: 320px;
+  height: 300px;
+  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-size: 30px 30px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+  resize: vertical;
+}
+/* line 168, ../sass/screen.scss */
+#contact #submit {
+  background: #4B99AD;
+  padding: 14px 16px 8px 16px;
+  border: none;
+}
+/* line 173, ../sass/screen.scss */
+#contact #submit:active {
+  background: #4BF9AD;
+  border: 2px dotted #1ba9cc;
+}
+
+/* line 179, ../sass/screen.scss */
+div {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* line 180, ../sass/screen.scss */
+div div {
+  position: relative;
+  align: center;
+}
+
+/* line 182, ../sass/screen.scss */
+.android {
+  height: 404px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* line 187, ../sass/screen.scss */
+.head {
+  width: 220px;
+  height: 100px;
+  top: 32px;
+  background: #A4CA39;
+  border-radius: 110px 110px 0 0;
+  -moz-border-radius: 110px 110px 0 0;
+  -webkit-border-radius: 110px 110px 0 0;
+  -webkit-transition: all 0.1s ease-in;
+}
+
+/* line 199, ../sass/screen.scss */
+.l_eye, .r_eye {
+  background: #fff;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 42px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+/* line 209, ../sass/screen.scss */
+.l_eye {
+  left: 50px;
+}
+
+/* line 210, ../sass/screen.scss */
+.r_eye {
+  right: 50px;
+}
+
+/* line 212, ../sass/screen.scss */
+.l_ant, .r_ant {
+  width: 6px;
+  height: 50px;
+  position: absolute;
+  top: -34px;
+  background: #A4CA39;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+/* line 222, ../sass/screen.scss */
+.l_ant {
+  left: 50px;
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+}
+
+/* line 228, ../sass/screen.scss */
+.r_ant {
+  right: 50px;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+}
+
+/* line 235, ../sass/screen.scss */
+.body {
+  width: 220px;
+  height: 184px;
+  top: 40px;
+  background: #A4CA39;
+  border-radius: 0 0 25px 25px;
+  -webkit-border-radius: 0 0 25px 25px;
+  -moz-border-radius: 0 0 25px 25px;
+}
+
+/* line 245, ../sass/screen.scss */
+.l_arm, .r_arm, .l_leg, .r_leg {
+  width: 50px;
+  position: absolute;
+  -webkit-transition: all 0.1s ease-in;
+  background: #A4CA39;
+}
+
+/* line 251, ../sass/screen.scss */
+.l_arm, .r_arm {
+  height: 150px;
+  border-radius: 0 0 25px 25px;
+  -moz-border-radius: 0 0 25px 25px;
+  -webkit-border-radius: 0 0 25px 25px;
+}
+
+/* line 258, ../sass/screen.scss */
+.l_leg, .r_leg {
+  height: 80px;
+  top: 182px;
+  border-radius: 0 0 25px 25px;
+  -moz-border-radius: 0 0 25px 25px;
+  -webkit-border-radius: 0 0 25px 25px;
+}
+
+/* line 265, ../sass/screen.scss */
+.l_arm {
+  left: -58px;
+}
+
+/* line 266, ../sass/screen.scss */
+.r_arm {
+  right: -58px;
+}
+
+/* line 267, ../sass/screen.scss */
+.l_leg {
+  left: 45px;
+}
+
+/* line 268, ../sass/screen.scss */
+.r_leg {
+  right: 45px;
+}
+
+/* line 270, ../sass/screen.scss */
+.head:hover {
+  -webkit-transform: rotate(-5deg) translate(-4px, -8px);
+  -transform: rotate(-5deg) translate(-4px, -8px);
+  -moz-transform: rotate(-5deg) translate(-4px, -8px);
+}
+
+/* line 276, ../sass/screen.scss */
+.l_arm:hover {
+  -webkit-transform: rotate(15deg) translate(-14px, 0);
+  -transform: rotate(15deg) translate(-14px, 0);
+  -moz-transform: rotate(15deg) translate(-14px, 0);
+}
+
+/* line 281, ../sass/screen.scss */
+.r_arm:hover {
+  -webkit-transform: rotate(-30deg) translate(30px, 0);
+  -transform: rotate(-30deg) translate(30px, 0);
+  -moz-transform: rotate(-30deg) translate(30px, 0);
+}
