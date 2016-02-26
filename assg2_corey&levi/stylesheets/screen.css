@@ -154,10 +154,11 @@ body {
 #footer {
   color: #FFF;
   text-align: center;
+  clear: left;
 }
 
 /*Style from http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video*/
-/* line 92, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 #video {
   position: fixed;
   top: 50%;
@@ -175,7 +176,7 @@ body {
   background-size: cover;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 #home-image {
   margin-left: auto;
   margin-right: auto;
@@ -183,7 +184,7 @@ body {
   border-radius: 50%;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .json-text {
   min-width: 500px;
   max-width: 500px;
@@ -192,7 +193,7 @@ body {
 }
 
 /* Style from http://cssdeck.com/labs/striped-business-card*/
-/* line 126, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 #bcbg {
   width: 450px;
   height: 250px;
@@ -201,7 +202,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .container {
   background: #222627;
   width: 445px;
@@ -210,7 +211,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .line1 {
   font-family: 'The Girl Next Door', cursive;
   font-size: 29px;
@@ -218,7 +219,7 @@ body {
   margin: 8px;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .line2 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
@@ -226,7 +227,7 @@ body {
   margin: -8px 0 0 9px;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .contact {
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
@@ -236,7 +237,7 @@ body {
   padding: 5px;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .logo {
   width: 125px;
   height: 130px;
@@ -245,74 +246,74 @@ body {
   text-align: center;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 #googleMap {
   margin: 0 auto;
 }
 
 /* Based off of styles from http://www.sanwebe.com/2014/08/css-html-forms-designs
  and http://codepen.io/rexkirby/pen/Fdnlz*/
-/* line 143, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 #contact {
+  float: left;
   margin: 0 auto;
   width: 400px;
   font-size: 16px;
-  background: #001a23;
+  background: #451212;
   padding: 30px 30px 30px 50px;
-  border: 5px solid #00222d;
+  border: 5px solid #342323;
 }
-/* line 150, ../sass/screen.scss */
-#contact #name, #contact #email, #contact #phonenum, #contact #date {
-  background: #4B99AD;
+/* line 152, ../sass/screen.scss */
+#contact #name, #contact #level, #contact #race, #contact #class, #contact #alignment, #contact #background {
+  background: #c73333;
   padding: 8px 15px 8px 15px;
   border: none;
   width: 350px;
 }
-/* line 156, ../sass/screen.scss */
-#contact #message {
-  background: #4B99AD;
-  padding: 16px 15px 8px 45px;
-  border: none;
-  width: 320px;
-  height: 300px;
-  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
-  resize: vertical;
-}
-/* line 168, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 #contact #submit {
-  background: #4B99AD;
+  background: #c73333;
   padding: 14px 16px 8px 16px;
   border: none;
 }
-/* line 173, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #contact #submit:active {
-  background: #4BF9AD;
+  background: #c73333;
   border: 2px dotted #1ba9cc;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
+#character_display {
+  float: right;
+  clear: right;
+  margin: 0 auto;
+  width: 400px;
+  font-size: 16px;
+  background: #451212;
+  padding: 30px 30px 30px 50px;
+  border: 5px solid #342323;
+}
+
+/* line 181, ../sass/screen.scss */
 div {
   margin: 0 auto;
   padding: 0;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 div div {
   position: relative;
   align: center;
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .android {
   height: 404px;
   width: 90%;
   margin: 20px auto;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .head {
   width: 220px;
   height: 100px;
@@ -324,7 +325,7 @@ div div {
   -webkit-transition: all 0.1s ease-in;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .l_eye, .r_eye {
   background: #fff;
   width: 20px;
@@ -336,17 +337,17 @@ div div {
   -webkit-border-radius: 10px;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .l_eye {
   left: 50px;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .r_eye {
   right: 50px;
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .l_ant, .r_ant {
   width: 6px;
   height: 50px;
@@ -358,7 +359,7 @@ div div {
   -moz-border-radius: 3px;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .l_ant {
   left: 50px;
   transform: rotate(-30deg);
@@ -366,7 +367,7 @@ div div {
   -moz-transform: rotate(-30deg);
 }
 
-/* line 228, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .r_ant {
   right: 50px;
   transform: rotate(30deg);
@@ -374,7 +375,7 @@ div div {
   -moz-transform: rotate(30deg);
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .body {
   width: 220px;
   height: 184px;
@@ -385,7 +386,7 @@ div div {
   -moz-border-radius: 0 0 25px 25px;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .l_arm, .r_arm, .l_leg, .r_leg {
   width: 50px;
   position: absolute;
@@ -393,7 +394,7 @@ div div {
   background: #A4CA39;
 }
 
-/* line 251, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .l_arm, .r_arm {
   height: 150px;
   border-radius: 0 0 25px 25px;
@@ -401,7 +402,7 @@ div div {
   -webkit-border-radius: 0 0 25px 25px;
 }
 
-/* line 258, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .l_leg, .r_leg {
   height: 80px;
   top: 182px;
@@ -410,41 +411,41 @@ div div {
   -webkit-border-radius: 0 0 25px 25px;
 }
 
-/* line 265, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .l_arm {
   left: -58px;
 }
 
-/* line 266, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .r_arm {
   right: -58px;
 }
 
-/* line 267, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .l_leg {
   left: 45px;
 }
 
-/* line 268, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .r_leg {
   right: 45px;
 }
 
-/* line 270, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .head:hover {
   -webkit-transform: rotate(-5deg) translate(-4px, -8px);
   -transform: rotate(-5deg) translate(-4px, -8px);
   -moz-transform: rotate(-5deg) translate(-4px, -8px);
 }
 
-/* line 276, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .l_arm:hover {
   -webkit-transform: rotate(15deg) translate(-14px, 0);
   -transform: rotate(15deg) translate(-14px, 0);
   -moz-transform: rotate(15deg) translate(-14px, 0);
 }
 
-/* line 281, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .r_arm:hover {
   -webkit-transform: rotate(-30deg) translate(30px, 0);
   -transform: rotate(-30deg) translate(30px, 0);

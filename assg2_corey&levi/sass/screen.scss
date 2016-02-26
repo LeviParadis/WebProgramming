@@ -1,0 +1,287 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$font-stack:    Tahoma, Geneva, sans-serif;
+$primary-color: #FFF;
+$secondary-color: #000;
+$link-color: #8082aa;
+$media-max: 820px;
+$media-min: 819px;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-color: $secondary-color;
+  background-image: url("../assets/keyboard.png");
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+#header {
+  color: $secondary-color;
+  background-color: $primary-color;
+  
+  h1 {
+    text-align: center;
+
+    padding-left: 3%;
+    padding-right: 3%;
+    
+    @media (max-width: $media-max) {
+      font-size: 300%;
+      padding-top: 7%;
+      padding-bottom: 9%;
+    }
+    @media (min-width: $media-min) {
+      font-size: 500%;
+      padding-top: 56px;
+      padding-bottom: 72px;
+    }
+  }
+  
+  #h-image {
+    position: relative;
+    width: 17%;
+    height: auto;
+    
+    @media (max-width: $media-max) {
+      width: 100px;
+    }
+    @media (min-width: $media-min) {
+      width: 150px;
+    }
+  }
+}
+
+#nav {
+  #nav-bar {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: none;
+  }
+  #nav-button {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 120%;
+    padding: 1.5%;
+
+    a {
+      text-decoration: none;
+      color: $link-color;
+      font-weight: 700;
+      text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+    }
+    
+    a:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+#footer {
+  color: $primary-color;
+  text-align: center;
+  clear:left;
+}
+
+/*Style from http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video*/
+#video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
+
+#home-image {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.json-text {
+    min-width:500px;
+    max-width:500px;
+    text-align:justify;
+    margin:0 auto;
+}
+
+/* Style from http://cssdeck.com/labs/striped-business-card*/
+@import url(http://fonts.googleapis.com/css?family=The+Girl+Next+Door);
+
+#bcbg {
+  width:450px;
+  height:250px;
+  background:transparent url(http://colourlovers.com.s3.amazonaws.com/images/patterns/3925/3925858.png?1381698366)repeat bottom right;padding:15px;font-family: 'Ubuntu', sans-serif;
+}
+.container {background:#222627; width:445px;height:245px;border:2px dotted #1ba9cc;font-family: 'Ubuntu', sans-serif;}
+.line1 {font-family: 'The Girl Next Door', cursive;font-size:29px;color:#fff;margin:8px;}
+.line2 {font-family: 'Ubuntu', sans-serif;font-size:15px;color:#fff;margin:-8px 0 0 9px;}
+.contact {font-family: 'Ubuntu', sans-serif;color:#fff;width:250px;height:65px;margin:75px 0 0 9px;padding:5px;}
+.logo {width:125px;height:130px;float:right;margin:-219px 10px 0 0;text-align:center;}
+
+#googleMap {
+  margin: 0 auto;
+}
+
+/* Based off of styles from http://www.sanwebe.com/2014/08/css-html-forms-designs
+ and http://codepen.io/rexkirby/pen/Fdnlz*/
+#contact {
+  float: left;
+  margin: 0 auto; 
+  width: 400px;
+  font-size: 16px;
+  background: #451212;
+  padding: 30px 30px 30px 50px; 
+  border: 5px solid #342323;  
+  #name, #level, #race, #class, #alignment, #background {
+    background: #c73333;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    width: 350px;
+  }
+  #submit {
+    background: #c73333;
+    padding: 14px 16px 8px 16px;
+    border: none;
+  }
+  #submit:active {
+    background: #c73333;
+    border:2px dotted #1ba9cc;
+  }
+}
+
+#character_display {
+  float: right;
+  clear: right;
+  margin: 0 auto; 
+  width: 400px;
+  font-size: 16px;
+  background: #451212;
+  padding: 30px 30px 30px 50px; 
+  border: 5px solid #342323; 
+  
+}
+
+  div { margin: 0 auto; padding: 0;}
+  div div { position: relative; align: center;}
+
+.android{
+    height: 404px; width: 90%;
+    margin: 20px auto;
+}
+
+.head{
+    width: 220px; height: 100px;
+    top: 32px;
+    background: #A4CA39;
+    
+    border-radius: 110px 110px 0 0;
+    -moz-border-radius: 110px 110px 0 0;
+    -webkit-border-radius: 110px 110px 0 0;
+    
+    -webkit-transition: all 0.1s ease-in;
+}
+
+.l_eye, .r_eye {
+    background: #fff;
+    width: 20px; height: 20px;
+    position: absolute; top: 42px;
+    
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.l_eye {left: 50px;}
+.r_eye {right: 50px;}
+
+.l_ant, .r_ant{
+    width: 6px; height: 50px;
+    position: absolute; top: -34px;
+    background: #A4CA39;
+    
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+.l_ant {
+    left: 50px;
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+}
+.r_ant {
+    right: 50px;
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+
+.body{
+    width: 220px; height: 184px;
+    top: 40px;
+    background: #A4CA39;
+    
+    border-radius: 0 0 25px 25px;
+    -webkit-border-radius: 0 0 25px 25px;
+    -moz-border-radius: 0 0 25px 25px;
+}
+
+.l_arm, .r_arm, .l_leg, .r_leg {
+    width: 50px; position: absolute;
+    -webkit-transition: all 0.1s ease-in;
+    background: #A4CA39;
+}
+
+.l_arm, .r_arm {
+    height: 150px;
+    border-radius: 0 0 25px 25px;
+    -moz-border-radius: 0 0 25px 25px;
+    -webkit-border-radius: 0 0 25px 25px;
+}
+
+.l_leg, .r_leg {
+    height: 80px; top: 182px;
+    border-radius: 0 0 25px 25px;
+    -moz-border-radius: 0 0 25px 25px;
+    -webkit-border-radius: 0 0 25px 25px;
+}
+
+.l_arm {left: -58px;}
+.r_arm {right: -58px;}
+.l_leg {left: 45px;}
+.r_leg {right: 45px;}
+
+.head:hover {
+    -webkit-transform: rotate(-5deg) translate(-4px, -8px);
+    -transform: rotate(-5deg) translate(-4px, -8px);
+    -moz-transform: rotate(-5deg) translate(-4px, -8px);
+}
+
+.l_arm:hover{
+    -webkit-transform: rotate(15deg) translate(-14px, 0);
+    -transform: rotate(15deg) translate(-14px, 0);
+    -moz-transform: rotate(15deg) translate(-14px, 0);
+}
+.r_arm:hover{
+    -webkit-transform: rotate(-30deg) translate(30px, 0);
+    -transform: rotate(-30deg) translate(30px, 0);
+    -moz-transform: rotate(-30deg) translate(30px, 0);
+}
