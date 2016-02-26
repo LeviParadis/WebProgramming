@@ -12,7 +12,7 @@ USE dnd;
 
 CREATE TABLE races
 (
-	races 		VARCHAR(20),
+	race 		VARCHAR(20),
 	subrace		VARCHAR(20),
 	size		ENUM('small','medium','large') NOT NULL,
 	base_speed	SMALLINT NOT NULL,
