@@ -1,5 +1,5 @@
 <?php
-$servername = "54.201.199.50";
+$servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "dnd";
@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO characters (name, class, charlevel, background, race, subrace) VALUES ('John','Bard',5,'Acolyte','Human','None')";
 
 //Pass/Fail statement
-if ($cont->query($sql) === TRUE) {
+if ($conn->query($sql) === TRUE) {
 	echo "It worked record was created";
 } else {
 	echo "Error: " .$sql . "<br>" . $conn->error;

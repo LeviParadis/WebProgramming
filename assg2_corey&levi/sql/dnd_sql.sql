@@ -16,7 +16,7 @@ CREATE TABLE races
 	subrace		VARCHAR(20),
 	size		ENUM('small','medium','large') NOT NULL,
 	base_speed	SMALLINT NOT NULL,
-	PRIMARY KEY (races, subrace)
+	PRIMARY KEY (race, subrace)
 );
 
 CREATE TABLE backgrounds
