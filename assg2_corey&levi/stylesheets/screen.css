@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(http://fonts.googleapis.com/css?family=The+Girl+Next+Door);
-/* line 5, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,158 +25,149 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /* line 15, ../sass/screen.scss */
 body {
-  font: 100% Tahoma, Geneva, sans-serif;
   color: #FFF;
   background-color: #000;
-  background-image: url("../assets/illo3.jpg");
-  background-position: center top;
-  background-attachment: fixed;
+  background: url("../assets/dnd_phb_art.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
+#forms {
+  width: 100%;
+  display: inline-block;
+  margin: 3%;
+}
+
+/* line 32, ../sass/screen.scss */
 #header {
   color: #000;
   background-color: #FFF;
 }
-/* line 28, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 #header h1 {
   text-align: center;
   padding-left: 3%;
   padding-right: 3%;
 }
 @media (max-width: 820px) {
-  /* line 28, ../sass/screen.scss */
+  /* line 36, ../sass/screen.scss */
   #header h1 {
-    font-size: 300%;
+    font: 300% Tahoma, Geneva, sans-serif;
     padding-top: 7%;
-    padding-bottom: 9%;
+    padding-bottom: 12%;
   }
 }
 @media (min-width: 819px) {
-  /* line 28, ../sass/screen.scss */
+  /* line 36, ../sass/screen.scss */
   #header h1 {
-    font-size: 500%;
+    font: 400% Tahoma, Geneva, sans-serif;
     padding-top: 56px;
     padding-bottom: 72px;
   }
 }
-/* line 46, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 #header #h-image {
   position: relative;
   width: 17%;
   height: auto;
 }
 @media (max-width: 820px) {
-  /* line 46, ../sass/screen.scss */
+  /* line 54, ../sass/screen.scss */
   #header #h-image {
     width: 100px;
   }
 }
 @media (min-width: 819px) {
-  /* line 46, ../sass/screen.scss */
+  /* line 54, ../sass/screen.scss */
   #header #h-image {
     width: 150px;
   }
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 #nav #nav-bar {
   width: 100%;
   margin: 0 auto;
   text-align: center;
   background: none;
 }
-/* line 67, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 #nav #nav-button {
   display: inline-block;
   margin: 0 auto;
   font-size: 120%;
   padding: 1.5%;
 }
-/* line 73, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 #nav #nav-button a {
   text-decoration: none;
   color: #8082aa;
   font-weight: 700;
   text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
 }
-/* line 80, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 #nav #nav-button a:hover {
   opacity: 0.5;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 #footer {
+  font: 100% Tahoma, Geneva, sans-serif;
   color: #FFF;
   text-align: center;
   clear: left;
+  padding: 5% 0 0 5%;
 }
 
-/*Style from http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video*/
-/* line 93, ../sass/screen.scss */
-#video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: url(polina.jpg) no-repeat;
-  background-size: cover;
-}
-
-/* line 110, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 #home-image {
   margin-left: auto;
   margin-right: auto;
@@ -184,7 +175,7 @@ body {
   border-radius: 50%;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .json-text {
   min-width: 500px;
   max-width: 500px;
@@ -193,7 +184,7 @@ body {
 }
 
 /* Style from http://cssdeck.com/labs/striped-business-card*/
-/* line 127, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 #bcbg {
   width: 450px;
   height: 250px;
@@ -202,7 +193,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .container {
   background: #222627;
   width: 445px;
@@ -211,7 +202,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .line1 {
   font-family: 'The Girl Next Door', cursive;
   font-size: 29px;
@@ -219,7 +210,7 @@ body {
   margin: 8px;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .line2 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
@@ -227,7 +218,7 @@ body {
   margin: -8px 0 0 9px;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .contact {
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
@@ -237,7 +228,7 @@ body {
   padding: 5px;
 }
 
-/* line 136, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .logo {
   width: 125px;
   height: 130px;
@@ -246,208 +237,60 @@ body {
   text-align: center;
 }
 
-/* line 138, ../sass/screen.scss */
-#googleMap {
-  margin: 0 auto;
-}
-
 /* Based off of styles from http://www.sanwebe.com/2014/08/css-html-forms-designs
  and http://codepen.io/rexkirby/pen/Fdnlz*/
-/* line 144, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 #contact {
   float: left;
   margin: 0 auto;
   width: 400px;
-  font-size: 16px;
+  font: 1em Tahoma, Geneva, sans-serif;
   background: #451212;
   padding: 30px 30px 30px 50px;
   border: 5px solid #342323;
 }
-/* line 152, ../sass/screen.scss */
-#contact #name, #contact #level, #contact #race, #contact #class, #contact #alignment, #contact #background {
+/* line 141, ../sass/screen.scss */
+#contact #name, #contact #level, #contact #race, #contact #class, #contact #subrace, #contact #background {
   background: #c73333;
   padding: 8px 15px 8px 15px;
   border: none;
   width: 350px;
 }
-/* line 158, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 #contact #submit {
   background: #c73333;
   padding: 14px 16px 8px 16px;
   border: none;
 }
-/* line 163, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 #contact #submit:active {
   background: #c73333;
   border: 2px dotted #1ba9cc;
 }
 
-/* line 169, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
+#right_col {
+  text-align: center;
+}
+
+/* line 162, ../sass/screen.scss */
 #character_display {
+  text-align: left;
   float: right;
   clear: right;
-  margin: 0 auto;
-  width: 400px;
-  font-size: 16px;
+  margin: 5% 5% 5% 1%;
+  width: 35%;
+  font: 1em Tahoma, Geneva, sans-serif;
   background: #451212;
-  padding: 30px 30px 30px 50px;
+  padding: 30px 30px 30px 30px;
   border: 5px solid #342323;
 }
 
-/* line 181, ../sass/screen.scss */
-div {
-  margin: 0 auto;
-  padding: 0;
-}
-
-/* line 182, ../sass/screen.scss */
-div div {
+/* line 174, ../sass/screen.scss */
+#char_title {
   position: relative;
+  font: 1.5em Tahoma, Geneva, sans-serif;
   align: center;
-}
-
-/* line 184, ../sass/screen.scss */
-.android {
-  height: 404px;
-  width: 90%;
-  margin: 20px auto;
-}
-
-/* line 189, ../sass/screen.scss */
-.head {
-  width: 220px;
-  height: 100px;
-  top: 32px;
-  background: #A4CA39;
-  border-radius: 110px 110px 0 0;
-  -moz-border-radius: 110px 110px 0 0;
-  -webkit-border-radius: 110px 110px 0 0;
-  -webkit-transition: all 0.1s ease-in;
-}
-
-/* line 201, ../sass/screen.scss */
-.l_eye, .r_eye {
-  background: #fff;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 42px;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-}
-
-/* line 211, ../sass/screen.scss */
-.l_eye {
-  left: 50px;
-}
-
-/* line 212, ../sass/screen.scss */
-.r_eye {
-  right: 50px;
-}
-
-/* line 214, ../sass/screen.scss */
-.l_ant, .r_ant {
-  width: 6px;
-  height: 50px;
-  position: absolute;
-  top: -34px;
-  background: #A4CA39;
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-}
-
-/* line 224, ../sass/screen.scss */
-.l_ant {
-  left: 50px;
-  transform: rotate(-30deg);
-  -webkit-transform: rotate(-30deg);
-  -moz-transform: rotate(-30deg);
-}
-
-/* line 230, ../sass/screen.scss */
-.r_ant {
-  right: 50px;
-  transform: rotate(30deg);
-  -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
-}
-
-/* line 237, ../sass/screen.scss */
-.body {
-  width: 220px;
-  height: 184px;
-  top: 40px;
-  background: #A4CA39;
-  border-radius: 0 0 25px 25px;
-  -webkit-border-radius: 0 0 25px 25px;
-  -moz-border-radius: 0 0 25px 25px;
-}
-
-/* line 247, ../sass/screen.scss */
-.l_arm, .r_arm, .l_leg, .r_leg {
-  width: 50px;
-  position: absolute;
-  -webkit-transition: all 0.1s ease-in;
-  background: #A4CA39;
-}
-
-/* line 253, ../sass/screen.scss */
-.l_arm, .r_arm {
-  height: 150px;
-  border-radius: 0 0 25px 25px;
-  -moz-border-radius: 0 0 25px 25px;
-  -webkit-border-radius: 0 0 25px 25px;
-}
-
-/* line 260, ../sass/screen.scss */
-.l_leg, .r_leg {
-  height: 80px;
-  top: 182px;
-  border-radius: 0 0 25px 25px;
-  -moz-border-radius: 0 0 25px 25px;
-  -webkit-border-radius: 0 0 25px 25px;
-}
-
-/* line 267, ../sass/screen.scss */
-.l_arm {
-  left: -58px;
-}
-
-/* line 268, ../sass/screen.scss */
-.r_arm {
-  right: -58px;
-}
-
-/* line 269, ../sass/screen.scss */
-.l_leg {
-  left: 45px;
-}
-
-/* line 270, ../sass/screen.scss */
-.r_leg {
-  right: 45px;
-}
-
-/* line 272, ../sass/screen.scss */
-.head:hover {
-  -webkit-transform: rotate(-5deg) translate(-4px, -8px);
-  -transform: rotate(-5deg) translate(-4px, -8px);
-  -moz-transform: rotate(-5deg) translate(-4px, -8px);
-}
-
-/* line 278, ../sass/screen.scss */
-.l_arm:hover {
-  -webkit-transform: rotate(15deg) translate(-14px, 0);
-  -transform: rotate(15deg) translate(-14px, 0);
-  -moz-transform: rotate(15deg) translate(-14px, 0);
-}
-
-/* line 283, ../sass/screen.scss */
-.r_arm:hover {
-  -webkit-transform: rotate(-30deg) translate(30px, 0);
-  -transform: rotate(-30deg) translate(30px, 0);
-  -moz-transform: rotate(-30deg) translate(30px, 0);
+  padding-left: 10px;
+  margin-left: 10px;
 }

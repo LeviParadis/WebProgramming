@@ -13,12 +13,20 @@ $media-max: 820px;
 $media-min: 819px;
 
 body {
-  font: 100% $font-stack;
   color: $primary-color;
   background-color: $secondary-color;
-  background-image: url("../assets/illo3.jpg");
-  background-position: center top;
-  background-attachment: fixed;
+  
+  background: url("../assets/dnd_phb_art.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#forms {
+  width: 100%;
+  display: inline-block;
+  margin: 3%;
 }
 
 #header {
@@ -32,12 +40,12 @@ body {
     padding-right: 3%;
     
     @media (max-width: $media-max) {
-      font-size: 300%;
+      font: 300% $font-stack;
       padding-top: 7%;
-      padding-bottom: 9%;
+      padding-bottom: 12%;
     }
     @media (min-width: $media-min) {
-      font-size: 500%;
+      font: 400% $font-stack;
       padding-top: 56px;
       padding-bottom: 72px;
     }
@@ -84,27 +92,11 @@ body {
 }
 
 #footer {
+  font: 100% $font-stack;
   color: $primary-color;
   text-align: center;
   clear:left;
-}
-
-/*Style from http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video*/
-#video { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover; 
+  padding: 5% 0 0 5%;
 }
 
 #home-image {
@@ -135,9 +127,6 @@ body {
 .contact {font-family: 'Ubuntu', sans-serif;color:#fff;width:250px;height:65px;margin:75px 0 0 9px;padding:5px;}
 .logo {width:125px;height:130px;float:right;margin:-219px 10px 0 0;text-align:center;}
 
-#googleMap {
-  margin: 0 auto;
-}
 
 /* Based off of styles from http://www.sanwebe.com/2014/08/css-html-forms-designs
  and http://codepen.io/rexkirby/pen/Fdnlz*/
@@ -145,11 +134,11 @@ body {
   float: left;
   margin: 0 auto; 
   width: 400px;
-  font-size: 16px;
+  font: 1em $font-stack;
   background: #451212;
   padding: 30px 30px 30px 50px; 
   border: 5px solid #342323;  
-  #name, #level, #race, #class, #alignment, #background {
+  #name, #level, #race, #class, #subrace, #background {
     background: #c73333;
     padding: 8px 15px 8px 15px;
     border: none;
@@ -166,122 +155,26 @@ body {
   }
 }
 
+#right_col {
+  text-align: center;
+}
+
 #character_display {
+  text-align: left;
   float: right;
   clear: right;
-  margin: 0 auto; 
-  width: 400px;
-  font-size: 16px;
+  margin: 5% 5% 5% 1%; 
+  width: 35%;
+  font: 1em $font-stack;
   background: #451212;
-  padding: 30px 30px 30px 50px; 
+  padding: 30px 30px 30px 30px; 
   border: 5px solid #342323; 
-  
 }
 
-  div { margin: 0 auto; padding: 0;}
-  div div { position: relative; align: center;}
-
-.android{
-    height: 404px; width: 90%;
-    margin: 20px auto;
-}
-
-.head{
-    width: 220px; height: 100px;
-    top: 32px;
-    background: #A4CA39;
-    
-    border-radius: 110px 110px 0 0;
-    -moz-border-radius: 110px 110px 0 0;
-    -webkit-border-radius: 110px 110px 0 0;
-    
-    -webkit-transition: all 0.1s ease-in;
-}
-
-.l_eye, .r_eye {
-    background: #fff;
-    width: 20px; height: 20px;
-    position: absolute; top: 42px;
-    
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
-
-.l_eye {left: 50px;}
-.r_eye {right: 50px;}
-
-.l_ant, .r_ant{
-    width: 6px; height: 50px;
-    position: absolute; top: -34px;
-    background: #A4CA39;
-    
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-}
-
-.l_ant {
-    left: 50px;
-    transform: rotate(-30deg);
-    -webkit-transform: rotate(-30deg);
-    -moz-transform: rotate(-30deg);
-}
-.r_ant {
-    right: 50px;
-    transform: rotate(30deg);
-    -webkit-transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-}
-
-.body{
-    width: 220px; height: 184px;
-    top: 40px;
-    background: #A4CA39;
-    
-    border-radius: 0 0 25px 25px;
-    -webkit-border-radius: 0 0 25px 25px;
-    -moz-border-radius: 0 0 25px 25px;
-}
-
-.l_arm, .r_arm, .l_leg, .r_leg {
-    width: 50px; position: absolute;
-    -webkit-transition: all 0.1s ease-in;
-    background: #A4CA39;
-}
-
-.l_arm, .r_arm {
-    height: 150px;
-    border-radius: 0 0 25px 25px;
-    -moz-border-radius: 0 0 25px 25px;
-    -webkit-border-radius: 0 0 25px 25px;
-}
-
-.l_leg, .r_leg {
-    height: 80px; top: 182px;
-    border-radius: 0 0 25px 25px;
-    -moz-border-radius: 0 0 25px 25px;
-    -webkit-border-radius: 0 0 25px 25px;
-}
-
-.l_arm {left: -58px;}
-.r_arm {right: -58px;}
-.l_leg {left: 45px;}
-.r_leg {right: 45px;}
-
-.head:hover {
-    -webkit-transform: rotate(-5deg) translate(-4px, -8px);
-    -transform: rotate(-5deg) translate(-4px, -8px);
-    -moz-transform: rotate(-5deg) translate(-4px, -8px);
-}
-
-.l_arm:hover{
-    -webkit-transform: rotate(15deg) translate(-14px, 0);
-    -transform: rotate(15deg) translate(-14px, 0);
-    -moz-transform: rotate(15deg) translate(-14px, 0);
-}
-.r_arm:hover{
-    -webkit-transform: rotate(-30deg) translate(30px, 0);
-    -transform: rotate(-30deg) translate(30px, 0);
-    -moz-transform: rotate(-30deg) translate(30px, 0);
+#char_title {
+  position: relative;
+  font: 1.5em $font-stack;
+  align: center;
+  padding-left: 10px;
+  margin-left: 10px;
 }

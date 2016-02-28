@@ -1,91 +1,81 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>CMPT 350 Assg2</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="..\stylesheets\ie.css">
-		<link rel="stylesheet" type="text/css" href="..\stylesheets\print.css">
 		<link rel="stylesheet" type="text/css" href="..\stylesheets\screen.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<script src="http://maps.googleapis.com/maps/api/js"></script>
-		<script src="../javascript/contact_me.js"></script>
 	</head>
 	<body>
 		<div id="header">
-			<h1><img id="h-image" src="../assets/D&D_Transparent.png">Character Builder</h1>
+			<h1><img id="h-image" src="../assets/dnd_logo.png">Character Builder</h1>
 		</div>
-		<br>
-		<form action ="../php/test.php" method ="post" id="contact" onsubmit="return validateForm()">
-			Name:
-			<br>
-			<input type="text" name="name" id="name" required>
-			<br>
-			<br>
-			Level:
-			<br>
-			<input type="number" name="level" id="level" required>
-			<br>
-			<br>
-			Race:
-			<br>
-			<select name="race" id="race" required>
-				<option value= "half-orc">Half-Orc</option>
-				<option value= "elf">Elf</option>
-				<option value= "human">Human</option>
-				<option value= "frostling">Frostling</option>
-				<option value= "dwarf">Dwarf</option>
-			</select>
-			<br>
-			<br>
-			Class:
-			<br>
-			<select name="class" id="class" required>
-				<option value= "wizard">Wizard</option>
-				<option value= "archer">Archer</option>
-				<option value= "warrior">Warrior</option>
-				<option value= "paladin">Paladin</option>
-				<option value= "rougue">Rouge</option>
-			</select>
-			<br>
-			<br>
-			Alignment:
-			<br>
-			<select name="alignment" id="alignment" required>
-				<option value= "lawful-good">Lawful-Good</option>
-				<option value= "lawful-neutral">Lawful-Neutral</option>
-				<option value= "lawful-evil">Lawful-Evil</option>
-				<option value= "neutral-good">Neutral-Good</option>
-				<option value= "neutral-neutral">Neutral-Neutral</option>
-			</select>
-			<br>
-			<br>
-			Background:
-			<br>
-			<select name="background" id="background" required>
-				<option value= "peasant">Peasant</option>
-				<option value= "archer">Archer</option>
-				<option value= "warrior">Warrior</option>
-				<option value= "paladin">Paladin</option>
-				<option value= "rougue">Rouge</option>
-			</select>
-			<br>
-			<br>
-			<input type="submit" value="Submit" id="submit">
-		</form>
-		<p style="text-align: center; font-size: 32px;">
-			Character List
-		</p>
-		<div id = "character_display">
-			Characters go in here
+		<div id="forms">
+			<form action ="../php/test.php" method ="post" id="contact" onsubmit="return validateForm()">
+				Create a character
+				<br>
+				<br>
+				Name:
+				<br>
+				<input type="text" name="name" id="name" required>
+				<br>
+				<br>
+				Level:
+				<br>
+				<input type="number" name="level" id="level" required>
+				<br>
+				<br>
+				Race:
+				<br>
+				<select name="race" id="race" required>
+					<option value= "Dragonborn">Dragonborn</option>
+					<option value= "Dwarf">Dwarf</option>
+					<option value= "Elf">Elf</option>
+					<option value= "Gnome">Gnome</option>
+					<option value= "Half-Elf">Half-Elf</option>
+					<option value= "Half-Orc">Half-Orc</option>
+					<option value= "Halfing">Halfing</option>
+					<option value= "Human">Human</option>
+					<option value= "Tiefling">Tiefling</option>
+				</select>
+				<br>
+				<br>
+				Class:
+				<br>
+				<select name="class" id="class" required>
+					<option value= "Barbarian">Barbarian</option>
+					<option value= "Bard">Bard</option>
+					<option value= "Cleric">Cleric</option>
+					<option value= "Druid">Druid</option>
+					<option value= "Fighter">Fighter</option>
+				</select>
+				<br>
+				<br>
+				Background:
+				<br>
+				<select name="background" id="background" required>
+					<option value= "Acolyte">Acolyte</option>
+					<option value= "Charlatan">Charlatan</option>
+					<option value= "Criminal">Criminal</option>
+					<option value= "Entertainer">Entertainer</option>
+					<option value= "Hermit">Hermit</option>
+				</select>
+				<br>
+				<br>
+				<input type="submit" value="Submit" id="submit">
+			</form>
+			<div id = "right_col"><p id="char_title">
+				Character List
+			</p>
+			<div id = "character_display">
+				Characters go in here
+			</div>
+			</div>
 		</div>
 		<div id="footer">
-			<br>
 			© Corey Hickson & Levi Paradis
-			<br>
-			<br>
 		</div>
-		<br>
 	</body>
 </html>
