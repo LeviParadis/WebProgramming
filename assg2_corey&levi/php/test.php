@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 //Inserting
-$sql = "INSERT INTO characters (name, class, charlevel, background, race, subrace) VALUES ('John','Bard',5,'Acolyte','Human','None')";
+$sql = "INSERT INTO characters (name, class, charlevel, background, race) VALUES ('$_POST[name]','$_POST[class]', $_POST[level],'$_POST[background]','$_POST[race]')";
 
 //Pass/Fail statement
 if ($conn->query($sql) === TRUE) {

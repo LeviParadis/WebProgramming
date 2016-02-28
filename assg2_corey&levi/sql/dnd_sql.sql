@@ -13,7 +13,6 @@ USE dnd;
 CREATE TABLE races
 (
 	race 		VARCHAR(20),
-	subrace		VARCHAR(20),
 	size		ENUM('small','medium','large') NOT NULL,
 	base_speed	SMALLINT NOT NULL,
 	PRIMARY KEY (race, subrace)
@@ -54,5 +53,4 @@ CREATE TABLE characters
 	charlevel	SMALLINT NOT NULL,
 	background	VARCHAR(20) REFERENCES backgrounds(background),
 	race		VARCHAR(20) REFERENCES races(race),
-	subrace		VARCHAR(20) REFERENCES races(subrace)
 );
