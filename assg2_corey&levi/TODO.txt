@@ -4,3 +4,4 @@ Data validation
 Send data without switching pages (AJAX/jQuery?/PHP)
 Retrieve and fill character sheets somehow (AJAX/jQuery?/PHP)
 Documentation
+Domain name

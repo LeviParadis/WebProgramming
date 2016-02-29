@@ -71,17 +71,14 @@
 				<p id="char_title">
 					Character List
 				</p>
-				<form action="../php/searchForCharacters.php" method="get" target="character_display" id = "charterForm" name="character_display">
+				<form action="../php/searchForCharacters.php" method="post" target="character_display" id = "charterForm" name="character_display">
 					<br>
 					<br>
 					Name:
 					<br>
-					<input type="text" name="searchName" id="searchName" required>
+					<input type="text" name="searchName" id="searchName" value="<?php echo $_GET['name'];?>" required>
 					<br>
 					<br>
-					<p name = "character_display">
-						
-					</p>
 					<input type="submit" value="Submit" id="submit">
 
 				</form>
