@@ -22,14 +22,14 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
 	while ($row = $result->fetch_assoc()) {
-		$name = $row["name"];
-		$background = $row["background"];
-		$charlevel = $row["charlevel"];
-		$class = $row["class"];
-		$race = $row["race"];
+		$name = $name." ".$row["name"];
+		$background = $background." ".$row["background"];
+		$charlevel = $charlevel." ".$row["charlevel"];
+		$class =$class." ".$row["class"];
+		$race = $race." ".$row["race"];
 	}
 } else {
-	echo "the search returned no results";
+
 }
 
 $location = "../html/index.php?name=".$name."&background=".$background."&charlevel=".$charlevel."&class=".$class."&race=".$race;

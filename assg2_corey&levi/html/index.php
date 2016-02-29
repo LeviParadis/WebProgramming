@@ -79,6 +79,9 @@
 					<input type="text" name="searchName" id="searchName" value="<?php echo $_GET['name'];?>" required>
 					<br>
 					<br>
+					<p value = "<?php echo $_GET['name'];?>">
+						"<?php echo $_GET['name'];?>" 
+						</p>
 					<input type="submit" value="Submit" id="submit">
 
 				</form>
