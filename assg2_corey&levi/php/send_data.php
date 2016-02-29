@@ -22,5 +22,7 @@ if ($conn->query($sql) === TRUE) {
 	echo "Error: " .$sql . "<br>" . $conn->error;
 }
 
+echo 'alert("Character created.")';
+
 $conn->close();
 ?>

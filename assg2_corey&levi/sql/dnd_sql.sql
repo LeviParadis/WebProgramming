@@ -12,10 +12,9 @@ USE dnd;
 
 CREATE TABLE races
 (
-	race 		VARCHAR(20),
+	race 		VARCHAR(20) PRIMARY KEY,
 	size		ENUM('small','medium','large') NOT NULL,
-	base_speed	SMALLINT NOT NULL,
-	PRIMARY KEY (race, subrace)
+	base_speed	SMALLINT NOT NULL
 );
 
 CREATE TABLE backgrounds
