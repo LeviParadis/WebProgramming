@@ -51,5 +51,5 @@ CREATE TABLE characters
 	class		VARCHAR(20) REFERENCES classes(class),
 	charlevel	SMALLINT NOT NULL,
 	background	VARCHAR(20) REFERENCES backgrounds(background),
-	race		VARCHAR(20) REFERENCES races(race),
+	race		VARCHAR(20) REFERENCES races(race)
 );
