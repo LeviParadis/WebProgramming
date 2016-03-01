@@ -15,15 +15,7 @@ if ($conn -> connect_error) {
 }
 
 //Receiving
-$sql = "SELECT * FROM characters
-    JOIN backgrounds 
-        ON characters.background = backgrounds.background 
-    JOIN classes 
-        ON characters.class = classes.class 
-    JOIN class_features 
-        ON characters.class = class_features.class 
-    JOIN races ON characters.race = races.race 
-WHERE name = '.$_POST[searchName].'";
+$sql = "SELECT * FROM characters";
 
 //Post variable here
 $result = $conn->query($sql);

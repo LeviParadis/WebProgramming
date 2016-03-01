@@ -71,18 +71,30 @@
 				<p id="char_title">
 					Character List
 				</p>
-				<form action="../php/searchForCharacters.php" method="post" target="character_display" id = "charterForm" name="character_display">
+				<form style ="float: right; padding-right: 30px;" action="../php/searchForCharacters.php" method="post" target="character_display" id = "contact" name="character_display">
 					<br>
 					<br>
-					Name:
-					<br>
-					<input type="text" name="searchName" id="searchName" value="<?php echo $_GET['name'];?>" required>
+					View Database
 					<br>
 					<br>
-					<p value = "<?php echo $_GET['name'];?>">
-						"<?php echo $_GET['name'];?>" 
-						</p>
-					<input type="submit" value="Submit" id="submit">
+					<br>
+					<p>
+						<br>
+						<br>
+						Names: <?php echo $_GET['name']; ?>
+						<br>
+						<br>
+						Levels: <?php echo $_GET['charlevel']; ?>
+						<br>
+						<br>
+						Classes:<?php echo $_GET['class']; ?>
+						<br>
+						<br>
+						Races:<?php echo $_GET['race']; ?>
+						<br>
+						<br>
+					</p>
+					<input type="submit" value="View" id="submit">
 
 				</form>
 			</div>
